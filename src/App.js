@@ -1,3 +1,5 @@
+import Header from './layouts/Header';
+
 export default function App() {
-  return <h1>Secure Life Pharmaceuticals</h1>;
+  return <Header />;
 }
