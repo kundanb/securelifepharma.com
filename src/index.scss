@@ -1,0 +1,176 @@
+@import './_vars';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+// ========================
+// reset
+// ------------------------
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+}
+
+body {
+  color: $color-dark;
+  font-family: $font-stack;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: $fw-b;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+  display: block;
+  background: transparent;
+}
+button {
+  cursor: pointer;
+}
+textarea {
+  resize: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+// ========================
+// flexbox
+// ------------------------
+
+.flx {
+  display: flex;
+}
+
+.flx-row {
+  flex-direction: row;
+}
+.flx-row-rev {
+  flex-direction: row-reverse;
+}
+.flx-col {
+  flex-direction: column;
+}
+.flx-col-rev {
+  flex-direction: column-reverse;
+}
+
+.flx-wrp {
+  flex-wrap: wrap;
+}
+.flx-wrp-rev {
+  flex-wrap: wrap-reverse;
+}
+.flx-nowrp {
+  flex-wrap: nowrap;
+}
+
+.flx-jc-c {
+  justify-content: center;
+}
+.flx-jc-fs {
+  justify-content: flex-start;
+}
+.flx-jc-fe {
+  justify-content: flex-end;
+}
+.flx-jc-sa {
+  justify-content: space-around;
+}
+.flx-jc-sb {
+  justify-content: space-between;
+}
+
+.flx-ai-c {
+  align-items: center;
+}
+.flx-ai-fs {
+  align-items: flex-start;
+}
+.flx-ai-fe {
+  align-items: flex-end;
+}
+.flx-ai-s {
+  align-items: stretch;
+}
+.flx-ai-b {
+  align-items: baseline;
+}
+
+.flx-ac-c {
+  align-content: center;
+}
+.flx-ac-fs {
+  align-content: flex-start;
+}
+.flx-ac-fe {
+  align-content: flex-end;
+}
+.flx-ac-sa {
+  align-content: space-around;
+}
+.flx-ac-sb {
+  align-content: space-between;
+}
+
+.flx-c-c {
+  justify-content: center;
+  align-items: center;
+}
+
+// ========================
+// classes
+// ========================
+
+.fw-n {
+  font-weight: $fw-n;
+}
+.fw-b {
+  font-weight: $fw-b;
+}
+
+.ta-l {
+  text-align: left;
+}
+.ta-c {
+  text-align: center;
+}
+.ta-r {
+  text-align: right;
+}
