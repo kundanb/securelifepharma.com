@@ -1,0 +1,64 @@
+@import '../../vars';
+
+$showcase-theme-color: #e91e63;
+$txt-sec-width: 45%;
+
+#about-showcase {
+  padding: 5em 0;
+  padding-bottom: 1000px;
+
+  h1 {
+    display: none;
+  }
+
+  h2 {
+    width: $txt-sec-width;
+    height: 2em;
+    font-size: 3em;
+
+    .cursor-bar {
+      position: absolute;
+      color: $showcase-theme-color;
+      animation: 0.5s showcase-typing-effect linear infinite;
+    }
+  }
+
+  p {
+    width: $txt-sec-width;
+    margin-top: 50px;
+  }
+
+  .btns-cont {
+    margin-top: 1em;
+
+    .btn {
+      margin-top: 1em;
+      margin-right: 2em;
+      padding: 0.5em 1em;
+      border-radius: 3px;
+      border: 1px solid $color-dark;
+      font-weight: $fw-b;
+
+      &:hover,
+      &:focus {
+        background-color: $showcase-theme-color;
+        border-color: transparent;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@keyframes showcase-typing-effect {
+  0%,
+  33%,
+  67%,
+  100% {
+    opacity: 0;
+  }
+
+  34%,
+  66% {
+    opacity: 1;
+  }
+}
