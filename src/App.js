@@ -1,5 +1,12 @@
 import Header from './layouts/Header';
+import { Route } from 'react-router-dom';
+import AboutUs from './pages/AboutUs';
 
 export default function App() {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Route path="/" component={AboutUs} />
+    </>
+  );
 }
