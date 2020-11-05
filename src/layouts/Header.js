@@ -19,7 +19,7 @@ export default function Header() {
   });
 
   return (
-    <header id="header" className={navbarActive || 'navbar-hidden'}>
+    <header id="header" className={navbarActive ? '' : 'navbar-hidden'}>
       <div className="container flx flx-jc-sb flx-ai-c">
         <div className="brand-cont flx">
           <img src={Logo} alt="Logo" className="device-desktop" />
@@ -33,7 +33,7 @@ export default function Header() {
         </div>
 
         <nav id="navbar" className="navbar-active flx">
-          <NavLink to="/" className="navlink">
+          <NavLink to="/" exact className="navlink">
             About Us
           </NavLink>
           <NavLink to="/products" className="navlink">
