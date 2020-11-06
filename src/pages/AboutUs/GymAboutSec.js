@@ -21,7 +21,7 @@ export default function GymAboutSec() {
             </p>
 
             <div className="btn-cont">
-              <button className="see-more-btn">Shop for Proteins</button>
+              <button className="see-more-btn">Shop for Gym Supplements</button>
             </div>
           </div>
         </div>

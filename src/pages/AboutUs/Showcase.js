@@ -37,7 +37,7 @@ export default class Showcase extends Component {
               See Catalogue
             </NavLink>
             <NavLink to="/shop" className="btn">
-              Buy Protein
+              Buy Gym Supplements
             </NavLink>
           </div>
         </div>

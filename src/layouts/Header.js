@@ -40,7 +40,7 @@ export default function Header() {
             Product Catalogue
           </NavLink>
           <NavLink to="/shop" className="navlink">
-            Buy Protein
+            Buy Gym Supplements
           </NavLink>
           <NavLink to="/blog" className="navlink">
             Blog
