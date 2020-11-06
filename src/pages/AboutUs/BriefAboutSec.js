@@ -7,7 +7,7 @@ export default function BriefAboutSec() {
         <h2 className="main-sec-title">About The Industry</h2>
         <p className="brief-desc">
           If you are looking for a product in a reasonable price bracket,
-          without compromising on the quality, then Secure Life Pharmaceutical
+          without compromising on the quality, then Secure Life Pharmaceuticals
           is the right destination for you. Our products are appreciated for
           their accurate composition and efficiency.
         </p>

@@ -1,8 +1,8 @@
 @import '../../vars';
 
 .our-role-sec {
-  .vertical-sec {
-    flex: 1;
+  .txt-sec {
+    flex: 3;
   }
 
   h3 {
@@ -10,10 +10,65 @@
 
     + p {
       margin-top: 1.5em;
+      text-align: justify;
+    }
+  }
+
+  .btn-cont {
+    margin-top: 2em;
+  }
+
+  .see-more-btn {
+    padding: 0.6em 1em;
+    background-color: #e91e63;
+    border-radius: 5px;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: $theme-color-dark;
     }
   }
 
   .img-sec {
-    margin-left: 3em;
+    flex: 2;
+    margin-left: 6em;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .our-role-sec {
+    text-align: center;
+
+    .secs-cont {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .vertical-sec {
+      flex: 1;
+    }
+
+    .txt-sec {
+      max-width: 700px;
+      margin-top: 3em;
+    }
+
+    h3 + p {
+      text-align: center;
+    }
+
+    .img-sec {
+      margin-left: 0;
+
+      img {
+        max-width: 300px;
+      }
+    }
+
+    .btn-cont {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

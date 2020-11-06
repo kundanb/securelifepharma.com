@@ -1,0 +1,16 @@
+@import '../../vars';
+
+#gym-about-sec {
+  background-color: $color-dark;
+  background-image: url('../../img/home-gym-bg.jpg');
+  background-size: cover;
+  background-position: top right;
+  color: #fff;
+}
+
+@media all and (max-width: 1024px) {
+  #gym-about-sec {
+    background-image: linear-gradient(to right, #0009, #0000),
+      url('../../img/home-gym-bg.jpg');
+  }
+}
