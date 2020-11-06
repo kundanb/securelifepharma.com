@@ -1,0 +1,19 @@
+@import '../../vars';
+
+.our-role-sec {
+  .vertical-sec {
+    flex: 1;
+  }
+
+  h3 {
+    font-size: 3em;
+
+    + p {
+      margin-top: 1.5em;
+    }
+  }
+
+  .img-sec {
+    margin-left: 3em;
+  }
+}

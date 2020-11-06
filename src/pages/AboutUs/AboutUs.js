@@ -1,12 +1,16 @@
 import './AboutUs.scss';
 import Showcase from './Showcase';
+import BriefAboutSec from './BriefAboutSec';
+import RoleThirdParty from './RoleThirdParty';
 
 export default function AboutUs() {
   return (
     <>
-      <div id="about-showcase-bg-wrpr">
-        <Showcase />
-      </div>
+      <Showcase />
+      <main id="about-main">
+        <BriefAboutSec />
+        <RoleThirdParty />
+      </main>
     </>
   );
 }

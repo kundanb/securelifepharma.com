@@ -23,16 +23,15 @@ export default class Showcase extends Component {
         <div className="container">
           <h1>Welcome to Secure Life Pharmaceuticals</h1>
 
-          <h2 className="flx flx-ai-fe">
-            <span>
-              {this.state.title} <span className="cursor-bar">|</span>
-            </span>
+          <h2>
+            {this.state.title} <span className="cursor-bar">|</span>
           </h2>
           <p>
             We are third-party manufacturer of Dietary Supplements and Gym
             Products. Our goal is to produce best quality and healthy products
             for healthy India.
           </p>
+
           <div className="btns-cont">
             <NavLink to="/products" className="btn">
               See Catalogue

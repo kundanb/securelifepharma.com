@@ -4,28 +4,32 @@ $showcase-theme-color: #e91e63;
 $txt-sec-width: 45%;
 
 #about-showcase {
-  padding: 5em 0;
-  padding-bottom: 1000px;
+  padding: 7em 0;
+  background-image: linear-gradient(to right, rgba(#000, 0.9), rgba(#fff, 0.1)),
+    url('../../img/about-showcase.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 
   h1 {
     display: none;
   }
 
   h2 {
-    width: $txt-sec-width;
-    height: 2em;
-    font-size: 3em;
+    max-width: 700px;
+    height: 2.5em;
+    font-size: 4em;
+    line-height: 1.25em;
 
     .cursor-bar {
       position: absolute;
-      color: $showcase-theme-color;
       animation: 0.5s showcase-typing-effect linear infinite;
     }
   }
 
   p {
-    width: $txt-sec-width;
-    margin-top: 50px;
+    max-width: 700px;
+    margin-top: 2em;
   }
 
   .btns-cont {
@@ -36,8 +40,7 @@ $txt-sec-width: 45%;
       margin-right: 2em;
       padding: 0.5em 1em;
       border-radius: 3px;
-      border: 1px solid $color-dark;
-      font-weight: $fw-b;
+      border: 1px solid #fff;
 
       &:hover,
       &:focus {
@@ -60,5 +63,42 @@ $txt-sec-width: 45%;
   34%,
   66% {
     opacity: 1;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  #about-showcase {
+    text-align: center;
+    background-image: linear-gradient(to top, rgba(#000, 0.8), rgba(#fff, 0)),
+      url('../../img/about-showcase.jpg');
+
+    h2,
+    p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btns-cont {
+      .btn {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  #about-showcase {
+    h2 {
+      font-size: 2.5em;
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  #about-showcase {
+    h2 {
+      height: 3.75em;
+    }
   }
 }

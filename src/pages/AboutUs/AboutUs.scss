@@ -1,7 +1,23 @@
 @import '../../vars';
 
-#about-showcase-bg-wrpr {
-  background: url('../../img/about-showcase.png') no-repeat;
-  background-size: 100%;
-  background-position: top left;
+#about-main,
+.main-sec {
+  padding: 2.5em 0;
+}
+
+.main-sec-title {
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 0 10px rgba($color-dark, 0.25);
+  font-size: 2em;
+}
+
+.main-sec-desc {
+  font-size: 0.9em;
+}
+
+@media all and (max-width: 500px) {
+  .main-sec-title {
+    font-size: 2em;
+  }
 }
