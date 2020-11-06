@@ -12,5 +12,9 @@
   #gym-about-sec {
     background-image: linear-gradient(to right, #0009, #0000),
       url('../../img/home-gym-bg.jpg');
+
+    .txt-sec {
+      margin-top: 0;
+    }
   }
 }
