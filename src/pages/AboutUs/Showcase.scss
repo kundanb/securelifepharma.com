@@ -4,7 +4,7 @@ $showcase-theme-color: #e91e63;
 $txt-sec-width: 45%;
 
 #about--showcase {
-  padding: $mt-main-sec 0;
+  padding-bottom: $mt-main-sec;
   background-image: linear-gradient(to right, #000a, #0000),
     url('../../img/about-showcase.jpg');
   background-size: cover;

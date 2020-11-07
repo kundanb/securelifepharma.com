@@ -1,4 +1,3 @@
-import './RoleThirdParty.scss';
 import RoleThirdPartyImage from '../../img/about--role-third-party.png';
 import { Link } from 'react-router-dom';
 

@@ -1,10 +1,6 @@
 @import '../../vars';
 
 #about--role-gym-prod {
-  $p-sec: $mt-main-sec;
-
-  padding-top: $p-sec;
-  padding-bottom: $p-sec;
   background-color: $color-dark;
   background-image: linear-gradient(to right, #0007, #0000),
     url('../../img/home-gym-bg.jpg');

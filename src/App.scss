@@ -28,6 +28,6 @@
   height: 1.25em;
 }
 
-.main--main-sec:not(:first-child) {
-  margin-top: $mt-main-sec;
+.main--main-sec {
+  padding-top: $mt-main-sec;
 }
