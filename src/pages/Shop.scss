@@ -1,0 +1,39 @@
+@import '../vars';
+
+#shop--prod-list {
+  padding-top: $mt-main-sec / 2;
+
+  $sec-border-color: rgba($color-dark, 0.1);
+
+  h1 span {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    border-bottom: 3px solid $color-theme-dark;
+  }
+
+  .prod-list-sec-cont {
+    margin-top: $mt-main-sec / 2;
+    box-shadow: 0 -1px $sec-border-color;
+  }
+
+  .sidebar {
+    max-width: 400px;
+    padding-top: $mt-main-sec / 2;
+    padding-right: $mt-main-sec / 2;
+
+    .filters-sec-title {
+      font-size: 1.1em;
+
+      .txt {
+        margin-left: 0.25em;
+      }
+    }
+  }
+
+  .prod-list-sec {
+    flex: 1;
+    padding-top: $mt-main-sec / 2;
+    padding-left: $mt-main-sec / 2;
+    box-shadow: -1px 0 $sec-border-color;
+  }
+}
