@@ -1,5 +1,6 @@
 import './RoleThirdParty.scss';
 import RoleThirdPartyImage from '../../img/about--role-third-party.png';
+import { Link } from 'react-router-dom';
 
 export default function RoleThirdParty() {
   return (
@@ -23,7 +24,9 @@ export default function RoleThirdParty() {
           </p>
 
           <div className="btns-cont">
-            <button className="more-btn">See Complete Catalouge</button>
+            <Link to="/products" className="more-btn">
+              See Complete Catalouge
+            </Link>
           </div>
         </div>
 
