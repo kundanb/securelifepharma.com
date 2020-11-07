@@ -1,0 +1,56 @@
+@import '../../vars';
+
+.about--our-role-sec {
+  .ver-sec {
+    flex: 1;
+  }
+
+  h3 {
+    font-size: 3em;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .more-btn {
+    display: inline-block;
+    padding: 0.6em 1em;
+    background-color: $color-theme;
+    border-radius: 5px;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: $color-theme-dark;
+    }
+  }
+
+  .img-sec {
+    margin-left: $mt-main-sec / 2;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .about--our-role-sec {
+    text-align: center;
+
+    .container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .txt-sec {
+      max-width: $max-w-s;
+      margin-top: $mt-main-sec / 2;
+    }
+
+    .img-sec {
+      margin-left: 0;
+
+      img {
+        max-height: 250px;
+      }
+    }
+  }
+}

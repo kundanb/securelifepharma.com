@@ -19,25 +19,26 @@ export default class Showcase extends Component {
 
   render() {
     return (
-      <div id="about-showcase">
+      <div id="about--showcase" className="main--main-sec">
         <div className="container">
           <h1>Welcome to Secure Life Pharmaceuticals</h1>
 
           <h2>
             {this.state.title} <span className="cursor-bar">|</span>
           </h2>
+
           <p>
-            We are third-party manufacturer of Dietary Supplements and Gym
-            Products. Our goal is to produce best quality and healthy products
-            for healthy India.
+            We are a third-party manufacturer of Dietary and Gym Supplements.
+            Our goal is to produce the best quality and healthy products for
+            healthy India.
           </p>
 
           <div className="btns-cont">
             <NavLink to="/products" className="btn">
-              See Catalogue
+              See Product Catalogue
             </NavLink>
             <NavLink to="/shop" className="btn">
-              Buy Gym Supplements
+              Shop for Gym Supplements
             </NavLink>
           </div>
         </div>

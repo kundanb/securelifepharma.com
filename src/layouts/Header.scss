@@ -2,7 +2,7 @@
 
 #header {
   padding: 1.5em 0;
-  border-bottom: 1px solid $theme-color-light;
+  border-bottom: 2px solid rgba($color-dark, 0.1);
 
   .brand-cont {
     img {
@@ -21,11 +21,12 @@
   .navtog-btn {
     padding: 0.25em;
     border-radius: 3px;
-    border: 1px solid $theme-color-dark;
+    border: 1px solid $color-dark;
 
     &:hover,
     &:focus {
-      background-color: $theme-color-dark;
+      background-color: $color-theme;
+      border-color: $color-theme-dark;
       color: #fff;
     }
   }
@@ -44,11 +45,12 @@
     &.active,
     &:hover,
     &:focus {
-      color: $theme-color-dark;
-      box-shadow: 0 2px $theme-color-dark-lightened;
+      color: $color-theme;
+      box-shadow: 0 2px $color-theme-dark;
     }
 
     &.active {
+      color: $color-theme-dark;
       font-weight: $fw-b;
     }
   }
@@ -80,12 +82,12 @@
       &:hover,
       &:focus {
         box-shadow: none;
-        background-color: $theme-color-light-darkened;
+        background-color: $color-theme;
+        color: #fff;
       }
 
       &.active {
-        background-color: $theme-color-dark;
-        color: #fff;
+        background-color: $color-theme-dark;
         font-weight: $fw-n;
       }
     }

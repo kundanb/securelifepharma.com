@@ -1,6 +1,10 @@
 @import '../../vars';
 
-#gym-about-sec {
+#about--role-gym-prod {
+  $p-sec: $mt-main-sec;
+
+  padding-top: $p-sec;
+  padding-bottom: $p-sec;
   background-color: $color-dark;
   background-image: url('../../img/home-gym-bg.jpg');
   background-size: cover;
@@ -10,8 +14,8 @@
 
 @media all and (max-width: 1024px) {
   #gym-about-sec {
-    background-image: linear-gradient(to right, #0009, #0000),
-      url('../../img/home-gym-bg.jpg');
+    // background-image: linear-gradient(to right, #0009, #0000),
+    // url('../../img/home-gym-bg.jpg');
 
     .txt-sec {
       margin-top: 0;

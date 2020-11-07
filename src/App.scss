@@ -1,0 +1,33 @@
+@import './vars';
+
+.fw-n {
+  font-weight: $fw-n;
+}
+.fw-b {
+  font-weight: $fw-b;
+}
+
+.ta-l {
+  text-align: left;
+}
+.ta-c {
+  text-align: center;
+}
+.ta-r {
+  text-align: right;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 $container-hor-pad;
+}
+
+.feather {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.main--main-sec:not(:first-child) {
+  margin-top: $mt-main-sec;
+}

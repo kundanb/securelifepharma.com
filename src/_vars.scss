@@ -1,14 +1,18 @@
+$color-light: #fafafa;
 $color-dark: #1b1e23;
+$color-theme: #00bcd4;
+$color-theme-light: #e0f7fa;
+$color-theme-dark: #006064;
 
-$theme-color-dark: #424874;
-$theme-color-dark-lightened: #a6b1e1;
-$theme-color-light: #f4eeff;
-$theme-color-light-darkened: #dcd6f7;
-
-$font-stack: 'Source Sans Pro', sans-serif;
+$font-stack: 'Nunito Sans', sans-serif;
 
 $fw-n: 400;
 $fw-b: 700;
+
+$mt-main-sec: 5em;
+$container-hor-pad: 1.5em;
+
+$max-w-s: 700px;
 
 :root {
   --color-dark: #1b1e23;

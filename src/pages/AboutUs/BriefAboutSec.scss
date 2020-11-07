@@ -1,11 +1,20 @@
 @import '../../vars';
 
-#brief-about-sec {
-  .brief-desc {
-    max-width: 700px;
-    margin: auto;
-    margin-top: 1.5em;
+#about--brief-about-sec {
+  margin-top: 0;
+  padding-top: $mt-main-sec;
+  padding-bottom: $mt-main-sec;
+  background-color: $color-light;
+
+  h2 {
+    text-transform: uppercase;
     text-align: center;
-    font-size: 0.9em;
+  }
+
+  p {
+    max-width: $max-w-s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
