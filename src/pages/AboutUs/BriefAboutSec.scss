@@ -2,17 +2,33 @@
 
 #about--brief-about-sec {
   padding-bottom: $mt-main-sec;
-  background-color: $color-light;
-
-  h2 {
-    text-transform: uppercase;
-    text-align: center;
-  }
+  text-align: center;
 
   p {
     max-width: $max-w-s;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 0.9em;
+  }
+
+  .btn {
+    padding: 0.5em 0.9em;
+    background: $color-theme-sec-dark;
+    border-radius: 2em;
+    color: #fff;
+    box-shadow: 0 0 10px -3px $border-color;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(to right, $color-theme, $color-theme-dark);
+      box-shadow: 0 0 10px $border-color;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  #about--brief-about-sec .btn {
+    font-size: 0.9em;
   }
 }

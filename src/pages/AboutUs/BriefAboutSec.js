@@ -1,4 +1,6 @@
+import { NavLink } from 'react-router-dom';
 import './BriefAboutSec.scss';
+import { Link } from 'react-router-dom';
 
 export default function BriefAboutSec() {
   return (
@@ -12,6 +14,12 @@ export default function BriefAboutSec() {
           is the right destination for you. Our products are appreciated for
           their accurate composition and efficiency.
         </p>
+
+        <div className="btns-cont">
+          <Link to="/contact" className="btn">
+            Contact with us
+          </Link>
+        </div>
       </div>
     </div>
   );
