@@ -1,33 +1,52 @@
 @import '../vars';
 
 #header {
-  padding: 1.5em 0;
-  border-bottom: 2px solid rgba($color-dark, 0.1);
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  border-bottom: 1px solid $color-theme;
+  font-size: 0.9em;
 
-  .brand-cont {
-    img {
-      height: 2.5em;
-
-      &.device-mobile {
-        display: none;
-      }
-    }
-  }
-
-  .navtog-btn-cont {
+  .nav-tog-btn {
     display: none;
-  }
-
-  .navtog-btn {
-    padding: 0.25em;
+    padding: 0.2em;
     border-radius: 3px;
     border: 1px solid $color-dark;
 
     &:hover,
     &:focus {
       background-color: $color-theme;
-      border-color: $color-theme-dark;
+      border-color: $color-theme;
       color: #fff;
+    }
+  }
+
+  .brand img {
+    height: 2.25em;
+  }
+
+  .shop-btn {
+    padding: 0.5em 0.9em;
+    border-radius: 2em;
+    box-shadow: inset 0 0 0 1px $color-theme-sec-dark;
+
+    .txt {
+      margin-left: 0.3em;
+    }
+
+    &:hover,
+    &:focus,
+    &.active {
+      box-shadow: 0 0 10px -3px $border-color;
+      color: #fff;
+    }
+
+    &:hover,
+    &:focus {
+      background: $color-theme-sec-dark;
+    }
+
+    &.active {
+      background: linear-gradient(to right, $color-theme, $color-theme-dark);
     }
   }
 
@@ -38,58 +57,50 @@
   }
 }
 
-#navbar {
-  .navlink {
-    margin-left: 1.5em;
+#navbar .navlink {
+  margin-left: 1em;
+  margin-right: 1em;
 
-    &.active,
-    &:hover,
-    &:focus {
-      color: $color-theme;
-      box-shadow: 0 2px $color-theme-dark;
-    }
+  &:hover,
+  &:focus,
+  &.active {
+    color: $color-theme;
+  }
 
-    &.active {
-      color: $color-theme-dark;
-      font-weight: $fw-b;
-    }
+  &.active {
+    font-weight: $fw-b;
   }
 }
 
 @media all and (max-width: 768px) {
   #header {
-    .navtog-btn-cont {
-      display: block;
-    }
-
     .container {
       flex-wrap: wrap;
+    }
+
+    .nav-tog-btn {
+      display: flex;
     }
   }
 
   #navbar {
-    width: 100%;
-    margin-top: 1em;
+    order: 4;
+    flex-basis: 100%;
+    margin-top: 1.25em;
+    padding-top: 1.25em;
+    border-top: 1px solid $border-color;
     flex-direction: column;
 
     .navlink {
-      margin-left: 0;
-      margin-top: 0.5em;
-      padding: 0.5em 1em;
+      margin: 0;
+      padding: 0.5em 0;
       border-radius: 3px;
-
-      &.active,
-      &:hover,
-      &:focus {
-        box-shadow: none;
-        background-color: $color-theme;
-        color: #fff;
-      }
-
-      &.active {
-        background-color: $color-theme-dark;
-        font-weight: $fw-n;
-      }
     }
+  }
+}
+
+@media all and (max-width: 500px) {
+  #header .shop-btn .txt {
+    display: none;
   }
 }

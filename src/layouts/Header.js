@@ -1,10 +1,10 @@
 import './Header.scss';
 import Logo from '../img/logo.svg';
-import LogoIcon from '../img/icon.svg';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { Menu } from 'react-feather';
 import Feather from '../components/Feather';
+import { ShoppingBag } from 'react-feather';
 
 export default function Header() {
   const [navbarActive, setNavbarActive] = useState(
@@ -21,34 +21,36 @@ export default function Header() {
   return (
     <header id="header" className={navbarActive ? '' : 'navbar-hidden'}>
       <div className="container flx flx-jc-sb flx-ai-c">
-        <div className="brand-cont flx">
-          <img src={Logo} alt="Logo" className="device-desktop" />
-          <img src={LogoIcon} alt="Logo Icon" className="device-mobile" />
+        <button className="nav-tog-btn flx" onClick={toggleNavbar}>
+          <Feather icon={Menu} />
+        </button>
+
+        <div className="brand flx">
+          <img src={Logo} alt="secure life pharma logo" />
         </div>
 
-        <div className="navtog-btn-cont">
-          <button className="navtog-btn flx" onClick={toggleNavbar}>
-            <Feather icon={Menu} />
-          </button>
-        </div>
-
-        <nav id="navbar" className="navbar-active flx">
+        <nav id="navbar" className="flx">
           <NavLink to="/" exact className="navlink">
-            About Us
+            About
           </NavLink>
+
           <NavLink to="/products" className="navlink">
-            Product Catalogue
+            Products
           </NavLink>
-          <NavLink to="/shop" className="navlink">
-            Buy Gym Supplements
-          </NavLink>
+
           <NavLink to="/blog" className="navlink">
             Blog
           </NavLink>
+
           <NavLink to="/contact" className="navlink">
-            Contact Us
+            Contact
           </NavLink>
         </nav>
+
+        <NavLink to="/shop" className="shop-btn flx flx-ai-c">
+          <Feather icon={ShoppingBag} />
+          <span className="txt">Shop</span>
+        </NavLink>
       </div>
     </header>
   );
