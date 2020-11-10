@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './Showcase.scss';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default class Showcase extends Component {
   titles = [
@@ -34,12 +34,13 @@ export default class Showcase extends Component {
           </p>
 
           <div className="btns-cont">
-            <NavLink to="/products" className="btn">
-              See Product Catalogue
-            </NavLink>
-            <NavLink to="/shop" className="btn">
-              Shop for Gym Supplements
-            </NavLink>
+            <Link to="/shop" className="btn shop-btn">
+              Shop Gym Supplements
+            </Link>
+
+            <Link to="/products" className="btn prods-btn">
+              See all Products
+            </Link>
           </div>
         </div>
       </div>

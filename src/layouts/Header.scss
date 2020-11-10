@@ -34,19 +34,15 @@
     }
 
     &:hover,
-    &:focus,
-    &.active {
-      box-shadow: 0 0 10px -3px $border-color;
-      color: #fff;
-    }
-
-    &:hover,
     &:focus {
       background: $color-theme-sec-dark;
+      color: #fff;
     }
 
     &.active {
       background: linear-gradient(to right, $color-theme, $color-theme-dark);
+      box-shadow: 0 0 10px -3px $border-color;
+      color: #fff;
     }
   }
 

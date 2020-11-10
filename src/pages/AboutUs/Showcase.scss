@@ -1,14 +1,16 @@
 @import '../../vars';
 
-$showcase-theme-color: #e91e63;
-$txt-sec-width: 45%;
-
 #about--showcase {
   padding-bottom: $mt-main-sec;
-  background-image: linear-gradient(to right, #000a, #0000),
+  background-image: linear-gradient(
+      to right,
+      rgba($color-theme-sec-dark, 0.9),
+      rgba($color-theme-dark, 0.9)
+    ),
     url('../../img/about-showcase.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
 
   h1 {
@@ -17,9 +19,9 @@ $txt-sec-width: 45%;
 
   h2 {
     max-width: $max-w-s;
-    height: 2.5em;
-    font-size: 3.5em;
-    line-height: 1.25em;
+    height: 3em;
+    font-size: 3em;
+    line-height: 1.5em;
 
     .cursor-bar {
       position: absolute;
@@ -29,26 +31,30 @@ $txt-sec-width: 45%;
   }
 
   p {
-    max-width: 700px;
+    max-width: $max-w-s;
     text-align: left;
+    font-size: 0.9em;
   }
 
   .btns-cont {
-    margin-top: 1em;
-
     .btn {
-      margin-top: 1em;
       margin-right: 2em;
-      padding: 0.5em 1em;
-      border-radius: 3px;
-      border: 1px solid #fff;
+      padding: 0.5em 0.9em;
+      border-radius: 2em;
+      box-shadow: 0 0 10px $border-color;
 
       &:hover,
       &:focus {
-        background-color: $color-theme;
-        border-color: transparent;
-        color: #fff;
+        box-shadow: 0 0 10px $border-color, 0 0 0 2px #fff;
       }
+    }
+
+    .shop-btn {
+      background: linear-gradient(to right, $color-theme, $color-theme-dark);
+    }
+
+    .prods-btn {
+      background-color: $color-theme-sec-dark;
     }
   }
 }
@@ -70,10 +76,15 @@ $txt-sec-width: 45%;
 @media all and (max-width: 1024px) {
   #about--showcase {
     text-align: center;
-    background: linear-gradient(to top, #0005, #0005),
+    background-image: linear-gradient(
+        to top,
+        rgba($color-theme-sec-dark, 0.9),
+        rgba($color-theme-dark, 0.9)
+      ),
       url('../../img/about-showcase.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
     h2,
     p {
@@ -92,7 +103,11 @@ $txt-sec-width: 45%;
 @media all and (max-width: 768px) {
   #about--showcase {
     h2 {
-      font-size: 2.5em;
+      font-size: 2em;
+    }
+
+    .btns-cont {
+      font-size: 0.9em;
     }
   }
 }
@@ -100,7 +115,11 @@ $txt-sec-width: 45%;
 @media all and (max-width: 500px) {
   #about--showcase {
     h2 {
-      height: 3.75em;
+      height: 4.5em;
+    }
+
+    .btns-cont .btn {
+      margin-top: 1em;
     }
   }
 }
