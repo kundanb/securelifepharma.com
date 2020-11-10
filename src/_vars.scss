@@ -3,6 +3,7 @@ $color-dark: #1b1e23;
 $color-theme: #f5487f;
 $color-theme-light: #fcdae5;
 $color-theme-dark: #c7417b;
+$color-theme-prim-dark: #8f3b76;
 $color-theme-sec-dark: #1f306e;
 
 $font-stack: 'Poppins', 'Nunito Sans', sans-serif;
@@ -15,7 +16,7 @@ $container-hor-pad: 1.5em;
 
 $max-w-s: 700px;
 
-$border-color: rgba($color-dark, 0.3);
+$border-color: rgba($color-dark, 0.4);
 
 :root {
   --color-dark: #1b1e23;

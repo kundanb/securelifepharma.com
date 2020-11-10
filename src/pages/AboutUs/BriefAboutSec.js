@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import './BriefAboutSec.scss';
 import { Link } from 'react-router-dom';
 

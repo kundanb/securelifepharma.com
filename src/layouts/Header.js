@@ -47,7 +47,7 @@ export default function Header() {
           </NavLink>
         </nav>
 
-        <NavLink to="/shop" className="shop-btn flx flx-ai-c">
+        <NavLink to="/shop" className="shop-btn btn-ui flx flx-ai-c">
           <Feather icon={ShoppingBag} />
           <span className="txt">Shop</span>
         </NavLink>

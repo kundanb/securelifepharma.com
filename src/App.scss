@@ -31,3 +31,23 @@
 .main--main-sec {
   padding-top: $mt-main-sec;
 }
+
+.btn-ui {
+  padding: 0.45em 0.85em;
+  background: $color-theme;
+  border-radius: 2em;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    background: $color-theme-dark;
+  }
+
+  &.active {
+    background-image: linear-gradient(
+      to right,
+      $color-theme,
+      $color-theme-dark
+    );
+  }
+}
