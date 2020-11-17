@@ -1,7 +1,7 @@
 @import '../../vars';
 
 .about--our-role-sec {
-  padding-bottom: $mt-main-sec;
+  padding-bottom: $main-sec-view-gap;
 
   .ver-sec {
     flex: 1;
@@ -16,20 +16,16 @@
   }
 
   .more-btn {
-    display: inline-block;
-    padding: 0.6em 1em;
     background-color: $color-theme;
-    border-radius: 5px;
     color: #fff;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $color-theme-dark;
     }
   }
 
   .img-sec {
-    margin-left: $mt-main-sec / 2;
+    margin-left: $main-sec-view-gap / 2;
   }
 }
 
@@ -44,7 +40,15 @@
 
     .txt-sec {
       max-width: $max-w-s;
-      margin-top: $mt-main-sec / 2;
+      margin-top: $main-sec-view-gap / 2;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .btns-cont {
+      justify-content: center;
     }
 
     .img-sec {

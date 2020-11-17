@@ -1,27 +1,30 @@
 import './Header.scss';
-import Logo from '../img/logo.svg';
+import Logo from '../img/logo-d.svg';
 import { NavLink } from 'react-router-dom';
+import PDFFile from '../pdfs/slp_prods.pdf';
 import { useState } from 'react';
 import { Menu } from 'react-feather';
 import Feather from '../components/Feather';
 import { ShoppingBag } from 'react-feather';
 
 export default function Header() {
+  const hideNavbarOn = 600;
+
   const [navbarActive, setNavbarActive] = useState(
-    window.innerWidth > 768 ? true : false
+    window.innerWidth > hideNavbarOn ? true : false
   );
 
   const toggleNavbar = () =>
-    setNavbarActive(window.innerWidth > 768 ? true : !navbarActive);
+    setNavbarActive(window.innerWidth > hideNavbarOn ? true : !navbarActive);
 
   window.addEventListener('resize', () => {
-    setNavbarActive(window.innerWidth > 768);
+    setNavbarActive(window.innerWidth > hideNavbarOn);
   });
 
   return (
     <header id="header" className={navbarActive ? '' : 'navbar-hidden'}>
       <div className="container flx flx-jc-sb flx-ai-c">
-        <button className="nav-tog-btn flx" onClick={toggleNavbar}>
+        <button className="nav-tog-btn flx flx-c-c" onClick={toggleNavbar}>
           <Feather icon={Menu} />
         </button>
 
@@ -29,14 +32,14 @@ export default function Header() {
           <img src={Logo} alt="secure life pharma logo" />
         </div>
 
-        <nav id="navbar" className="flx">
+        <nav className="flx navbar">
           <NavLink to="/" exact className="navlink">
             About
           </NavLink>
 
-          <NavLink to="/products" className="navlink">
+          <a href={PDFFile} to="/products" className="navlink">
             Products
-          </NavLink>
+          </a>
 
           <NavLink to="/blog" className="navlink">
             Blog
@@ -47,7 +50,7 @@ export default function Header() {
           </NavLink>
         </nav>
 
-        <NavLink to="/shop" className="shop-btn btn-ui flx flx-ai-c">
+        <NavLink to="/shop" className="shop-btn ui-btn">
           <Feather icon={ShoppingBag} />
           <span className="txt">Shop</span>
         </NavLink>

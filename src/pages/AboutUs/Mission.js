@@ -2,7 +2,7 @@ import './Mission.scss';
 
 export default function Mission() {
   return (
-    <div id="about--mission" className="main--main-sec">
+    <div id="about--mission" className="main-sec">
       <div className="container">
         <h2>Our Mission & Vision</h2>
 

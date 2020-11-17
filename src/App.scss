@@ -16,6 +16,9 @@
 .ta-r {
   text-align: right;
 }
+.ta-j {
+  text-align: justify;
+}
 
 .container {
   max-width: 1280px;
@@ -28,26 +31,33 @@
   height: 1.25em;
 }
 
-.main--main-sec {
-  padding-top: $mt-main-sec;
+.main-sec {
+  padding-top: $main-sec-view-gap;
+  padding-bottom: $main-sec-view-gap;
 }
 
-.btn-ui {
-  padding: 0.45em 0.85em;
-  background: $color-theme;
+.ui-btn {
+  padding: $btn-pad;
   border-radius: 2em;
-  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &:hover,
-  &:focus {
-    background: $color-theme-dark;
+  .feather + .txt {
+    margin-left: 0.25em;
+  }
+
+  &.ui-btn-reg {
+    border: inset 1px solid transparent;
   }
 
   &.active {
-    background-image: linear-gradient(
-      to right,
-      $color-theme,
-      $color-theme-dark
-    );
+    font-weight: $fw-b;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    padding: 0 ($container-hor-pad/2);
   }
 }

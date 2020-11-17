@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function RoleThirdParty() {
   return (
-    <div
-      id="about--role-third-party"
-      className="main--main-sec about--our-role-sec"
-    >
+    <div id="about--role-third-party" className="main-sec about--our-role-sec">
       <div className="container flx">
         <div className="ver-sec txt-sec">
           <h3>Our role as a Third-Party Manufacturer</h3>
@@ -22,8 +19,8 @@ export default function RoleThirdParty() {
             with the client develop a long-term handshake.
           </p>
 
-          <div className="btns-cont">
-            <Link to="/products" className="more-btn">
+          <div className="btns-cont flx">
+            <Link to="/products" className="btn more-btn ui-btn">
               See Complete Catalouge
             </Link>
           </div>

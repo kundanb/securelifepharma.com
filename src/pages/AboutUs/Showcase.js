@@ -19,7 +19,7 @@ export default class Showcase extends Component {
 
   render() {
     return (
-      <div id="about--showcase" className="main--main-sec">
+      <div id="about--showcase" className="main-sec">
         <div className="container">
           <h1>Welcome to Secure Life Pharmaceuticals</h1>
 
@@ -33,12 +33,12 @@ export default class Showcase extends Component {
             healthy India.
           </p>
 
-          <div className="btns-cont">
-            <Link to="/shop" className="btn shop-btn">
+          <div className="btns-cont flx">
+            <Link to="/shop" className="btn shop-btn ui-btn">
               Shop Gym Supplements
             </Link>
 
-            <Link to="/products" className="btn prods-btn">
+            <Link to="/products" className="btn prods-btn ui-btn">
               See all Products
             </Link>
           </div>

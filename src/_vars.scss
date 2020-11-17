@@ -11,12 +11,16 @@ $font-stack: 'Poppins', 'Nunito Sans', sans-serif;
 $fw-n: 400;
 $fw-b: 600;
 
-$mt-main-sec: 5em;
+$main-sec-view-gap: 5em;
 $container-hor-pad: 1.5em;
 
 $max-w-s: 700px;
 
-$border-color: rgba($color-dark, 0.4);
+$btn-pad-v: 0.5em;
+$btn-pad-h: 0.9em;
+$btn-pad: $btn-pad-v $btn-pad-h;
+
+$ui-btn-shadow: 0 0 5px #333;
 
 :root {
   --color-dark: #1b1e23;

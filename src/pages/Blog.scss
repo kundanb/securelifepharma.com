@@ -1,0 +1,35 @@
+@import '../vars';
+
+#blog {
+  max-width: $max-w-s;
+  margin: auto;
+
+  .img-cont {
+    margin-top: 2em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: $color-theme-sec-dark;
+  }
+
+  p + table,
+  h3 + table {
+    margin-top: 1.5em;
+  }
+
+  table {
+    tr,
+    th,
+    td {
+      padding: 0.5em 0.9em;
+      border: 1px solid #ddd;
+    }
+
+    + h2,
+    + h3 {
+      margin-top: 1.5em;
+    }
+  }
+}

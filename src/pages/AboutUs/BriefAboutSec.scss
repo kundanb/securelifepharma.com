@@ -1,7 +1,6 @@
 @import '../../vars';
 
 #about--brief-about-sec {
-  padding-bottom: $mt-main-sec;
   text-align: center;
 
   p {
@@ -13,16 +12,17 @@
   }
 
   .btn {
-    padding: 0.5em 0.9em;
     background: $color-theme-sec-dark;
-    border-radius: 2em;
     color: #fff;
-    box-shadow: 0 0 10px -3px $border-color;
+    box-shadow: 0 0 10px -3px #0005;
 
     &:hover,
     &:focus {
-      background: linear-gradient(to right, $color-theme, $color-theme-dark);
-      box-shadow: 0 0 10px $border-color;
+      background: linear-gradient(
+        to right bottom,
+        $color-theme,
+        $color-theme-dark
+      );
     }
   }
 }

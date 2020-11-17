@@ -5,7 +5,7 @@ import ProdList from './Shop/ProdList';
 export default class Shop extends Component {
   render() {
     return (
-      <div id="shop--prod-list" className="main--main-sec">
+      <div id="shop--prod-list" className="main-sec">
         <div className="container">
           <h1>
             <span>Shop for Gym Supplements</span>

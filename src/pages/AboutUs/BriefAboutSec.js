@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function BriefAboutSec() {
   return (
-    <div id="about--brief-about-sec" className="main--main-sec">
+    <div id="about--brief-about-sec" className="main-sec">
       <div className="container">
         <h2>About The Industry</h2>
 
@@ -14,8 +14,8 @@ export default function BriefAboutSec() {
           their accurate composition and efficiency.
         </p>
 
-        <div className="btns-cont">
-          <Link to="/contact" className="btn">
+        <div className="btns-cont flx flx-jc-c">
+          <Link to="/contact" className="btn ui-btn">
             Contact with us
           </Link>
         </div>

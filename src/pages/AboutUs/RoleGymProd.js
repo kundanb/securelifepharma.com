@@ -3,15 +3,12 @@ import { Link } from 'react-router-dom';
 
 export default function RoleGymProd() {
   return (
-    <div
-      id="about--role-gym-prod"
-      className="main--main-sec about--our-role-sec"
-    >
+    <div id="about--role-gym-prod" className="main-sec about--our-role-sec">
       <div className="container flx">
         <div className="ver-sec img-sec"></div>
 
         <div className="ver-sec txt-sec">
-          <h3>and, as a Gym Supplements Manufacturer</h3>
+          <h3>And, as a Gym Supplements Manufacturer</h3>
 
           <p>
             Being a third-party manufacturer, we are also the one of the best
@@ -23,8 +20,8 @@ export default function RoleGymProd() {
             and much more.
           </p>
 
-          <div className="btns-cont">
-            <Link to="./shop" className="more-btn">
+          <div className="btns-cont flx">
+            <Link to="./shop" className="ui-btn more-btn">
               Shop for Gym Supplements
             </Link>
           </div>

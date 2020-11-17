@@ -1,0 +1,52 @@
+@import '../vars';
+
+#contact {
+  text-align: center;
+
+  h2 {
+    margin-top: 3em;
+  }
+
+  .map {
+    margin-top: 2em;
+  }
+}
+
+#contact-form {
+  max-width: $max-w-s;
+  margin: auto;
+  margin-top: 4em;
+
+  input,
+  textarea {
+    width: 100%;
+    margin-top: 2em;
+    padding: 0.5em 0.9em;
+    border-radius: 5px;
+    border: 1px solid rgba($color-dark, 0.3);
+
+    &:focus {
+      border-color: $color-dark;
+    }
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 2em;
+    background-color: $color-theme;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(
+        to right bottom,
+        $color-theme,
+        $color-theme-dark
+      );
+    }
+  }
+}

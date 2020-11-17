@@ -1,74 +1,85 @@
 @import '../vars';
 
+$header-pad: 1.5em;
+
 #header {
-  padding-top: 1.25em;
-  padding-bottom: 1.25em;
-  border-bottom: 1px solid $color-theme;
-  font-size: 0.9em;
+  padding: $header-pad 0;
+  border-bottom: 2px solid $color-theme;
 
   .nav-tog-btn {
     display: none;
-    padding: 0.2em;
+    padding: 0.25em;
+    border: 1px solid $color-theme-sec-dark;
     border-radius: 3px;
-    border: 1px solid $color-dark;
+    color: $color-theme-sec-dark;
 
-    &:hover,
-    &:focus {
-      background-color: $color-theme;
-      border-color: $color-theme;
+    &:hover {
+      background-color: $color-theme-sec-dark;
       color: #fff;
     }
   }
 
   .brand img {
-    height: 2.25em;
+    height: 2.5em;
+  }
+
+  .navbar .navlink {
+    margin: 0 1em;
+
+    &:hover {
+      color: $color-theme;
+    }
+
+    &.active {
+      font-weight: $fw-b;
+      color: $color-theme;
+    }
   }
 
   .shop-btn {
-    // padding: 0.5em 0.9em;
-    // border-radius: 2em;
-    // box-shadow: inset 0 0 0 1px $color-theme-sec-dark;
+    background-color: $color-theme-sec-dark;
+    color: #fff;
 
-    .txt {
-      margin-left: 0.3em;
+    &:hover {
+      background-color: $color-theme;
+      box-shadow: 0 0 10px -3px #0005;
     }
 
-    // &:hover,
-    // &:focus {
-    //   background: $color-theme-sec-dark;
-    //   color: #fff;
-    // }
-
-    // &.active {
-    //   background: linear-gradient(to right, $color-theme, $color-theme-dark);
-    //   box-shadow: 0 0 10px -3px $border-color;
-    //   color: #fff;
-    // }
+    &.active {
+      background: linear-gradient(
+        to right bottom,
+        $color-theme,
+        $color-theme-dark
+      );
+      box-shadow: 0 0 10px -3px #0005;
+    }
   }
 
   &.navbar-hidden {
-    #navbar {
+    .navbar {
       display: none;
     }
   }
-}
 
-#navbar .navlink {
-  margin-left: 1em;
-  margin-right: 1em;
-
-  &:hover,
-  &:focus,
-  &.active {
-    color: $color-theme;
-  }
-
-  &.active {
-    font-weight: $fw-b;
+  &:not(.navbar-hidden) {
+    .nav-tog-btn {
+      background-color: $color-theme-sec-dark;
+      color: #fff;
+    }
   }
 }
 
 @media all and (max-width: 768px) {
+  #header {
+    .shop-btn {
+      .txt {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
   #header {
     .container {
       flex-wrap: wrap;
@@ -77,26 +88,20 @@
     .nav-tog-btn {
       display: flex;
     }
-  }
 
-  #navbar {
-    order: 4;
-    flex-basis: 100%;
-    margin-top: 1.25em;
-    padding-top: 1.25em;
-    border-top: 1px solid $border-color;
-    flex-direction: column;
+    .navbar {
+      order: 4;
+      flex-basis: 100%;
+      display: block;
+      margin-top: $header-pad;
+      padding-top: $header-pad;
+      border-top: 1px solid $color-theme-sec-dark;
 
-    .navlink {
-      margin: 0;
-      padding: 0.5em 0;
-      border-radius: 3px;
+      .navlink {
+        display: block;
+        margin: 0;
+        padding: $btn-pad-v 0;
+      }
     }
-  }
-}
-
-@media all and (max-width: 500px) {
-  #header .shop-btn .txt {
-    display: none;
   }
 }
