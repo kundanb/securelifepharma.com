@@ -25,7 +25,12 @@ export default class Contact extends Component {
         <div className="container">
           <h1>Contact With Us</h1>
 
-          <form id="contact-form" autoComplete="off">
+          <form
+            id="contact-form"
+            autoComplete="off"
+            action="/submit_query"
+            method="POST"
+          >
             <input
               type="text"
               name="name"
