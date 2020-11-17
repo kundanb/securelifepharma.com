@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import './Showcase.scss';
 import { Link } from 'react-router-dom';
+import PDFFile from '../../pdfs/slp_prods.pdf';
 
 export default class Showcase extends Component {
   titles = [
@@ -38,9 +39,9 @@ export default class Showcase extends Component {
               Shop Gym Supplements
             </Link>
 
-            <Link to="/products" className="btn prods-btn ui-btn">
+            <a href={PDFFile} to="/products" className="btn prods-btn ui-btn">
               See all Products
-            </Link>
+            </a>
           </div>
         </div>
       </div>

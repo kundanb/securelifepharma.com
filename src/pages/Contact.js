@@ -9,6 +9,10 @@ export default class Contact extends Component {
     description: '',
   };
 
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+  }
+
   handleChange = e => {
     this.setState({
       [e.target.name]: e.target.value,
