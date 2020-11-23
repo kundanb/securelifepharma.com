@@ -1,4 +1,6 @@
 import { Component } from 'react';
+import Feather from '../components/Feather';
+import { MapPin } from 'react-feather';
 import './Contact.scss';
 
 export default class Contact extends Component {
@@ -25,51 +27,79 @@ export default class Contact extends Component {
         <div className="container">
           <h1>Contact With Us</h1>
 
-          <form
-            id="contact-form"
-            autoComplete="off"
-            action="/submit_query"
-            method="POST"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              value={this.state.name}
-              onChange={this.handleChange}
-              required
-            />
+          <section className="addr-sec flx flx-col flx-ai-c">
+            <h2 className="flx flx-ai-c">
+              <Feather icon={MapPin} />
+              &nbsp; Come to us
+            </h2>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              value={this.state.email}
-              onChange={this.handleChange}
-              required
-            />
+            <p>
+              <strong>Address:</strong>
+              <br />
+              Secure Life Pharmaceuticals
+              <br />
+              Khasra No. 537, Sikhera Industial Area,
+              <br />
+              Modinagar, Dist. Ghaziabad, U.P.
+              <br />
+              PIN Code: 201201
+              <br />
+              <br />
+              <strong>Email:</strong>
+              <br />
+              <a href="mailto:securelife20@yahoo.com">securelife20@yahoo.com</a>
+            </p>
+          </section>
 
-            <input
-              type="text"
-              name="subject"
-              placeholder="Enter Subject"
-              value={this.state.subject}
-              onChange={this.handleChange}
-              required
-            />
+          <section>
+            <h2>Have a Query? Ask with us</h2>
 
-            <textarea
-              name="description"
-              placeholder="Describe Your Query"
-              value={this.state.description}
-              onChange={this.handleChange}
-              required
-            ></textarea>
+            <form
+              id="contact-form"
+              autoComplete="off"
+              action="/submit_query"
+              method="POST"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={this.state.name}
+                onChange={this.handleChange}
+                required
+              />
 
-            <button type="submit" className="ui-btn">
-              Submit Query
-            </button>
-          </form>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={this.state.email}
+                onChange={this.handleChange}
+                required
+              />
+
+              <input
+                type="text"
+                name="subject"
+                placeholder="Enter Subject"
+                value={this.state.subject}
+                onChange={this.handleChange}
+                required
+              />
+
+              <textarea
+                name="description"
+                placeholder="Describe Your Query"
+                value={this.state.description}
+                onChange={this.handleChange}
+                required
+              ></textarea>
+
+              <button type="submit" className="ui-btn">
+                Submit Query
+              </button>
+            </form>
+          </section>
 
           <h2>Directions to the Industry</h2>
 
